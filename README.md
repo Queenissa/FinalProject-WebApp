@@ -2,5 +2,5 @@
 Web App with Nodejs
 Author: 
   Quency Atacador
-  Sarah MAe Bautista
+  Sarah Mae Bautista
   Antonette Biore
