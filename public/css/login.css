@@ -6,7 +6,7 @@
     margin-top: 1in;
 }
 
-.btn{
+#myBtn{
     background: linear-gradient(to left, #ff99ff 0%, #ff3399 105%);
     border-radius: 10px;
 }

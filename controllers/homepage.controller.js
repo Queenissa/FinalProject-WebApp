@@ -4,7 +4,7 @@ const { request, response } = require('express')
 
 
 const homepage = async (request, response) => {
-    response.render('partials/header')
+    response.render('pages/index')
 }
 
 const userRgistration = async (request, response) => {
