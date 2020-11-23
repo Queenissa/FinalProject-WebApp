@@ -1,18 +1,7 @@
-
- .bs-example{
-    margin: 20px;
-}
-
-.form-control{
+/* .form-control{
 width: 400px;
-}
-
-nav{
-background: linear-gradient(to top right, #cc0099 0%, #ffffff 105%);
-
-}
-
-.search input {
+} */
+/* .search input {
 width: 450px;
 height: 40px;
 border-radius: 5px;
@@ -25,7 +14,7 @@ color:  linear-gradient(to bottom, #cc99ff 0%, #cc00cc 105%);
 
 .search input::placeholder{
 color: linear-gradient(to top right, #cc99ff 0%, #ff0066 105%);;
-opacity: 1; /* ONLY FOR MOZILLA USERS */
+opacity: 1; 
 }
 
 .search button {
@@ -38,9 +27,6 @@ background: linear-gradient(to top right, #000066 0%, #ff0066 105%);
 transition-property: all;
 transition-duration: 0.5s;
 padding: 3px;
-/* position: absolute; */
-/* right: 0;
-outline: none; */
 }
 
 .search button i {
@@ -52,10 +38,28 @@ transition-duration: 0.5s;
 transform: scale(1.1);
 transition-property: all;
 transition-duration: 0.5s;
+} */
+
+nav{
+    background: linear-gradient(to top right, #a305f2 0%, #e7b1ed 105%);
 }
 
+.navbarLink{
+    margin-top: 20px;
+    margin-left: 790px;
+    list-style: none;
+}
+/* logo */
 .logo{
+margin-left: 15px;
 color: black;
-font-family: 'Pacifico';
-font-size: 30px;
+font-family: 'Norican';
+font-size: 50px;
+font-weight: bold;
 }   
+
+.logo:hover{
+    text-decoration: none;
+    color: white;
+    transition-duration: 0.8s;
+}
