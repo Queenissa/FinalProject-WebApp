@@ -1,3 +1,54 @@
-.form-control {
-    width: 50%;
+
+
+nav{
+background: linear-gradient(to top right, #cc0099 0%, #ffffff 105%);
+
 }
+
+.search input {
+width: 450px;
+height: 40px;
+border-radius: 5px;
+outline: none;
+padding-left: 15px;
+background: #fff;
+border: 2px solid  linear-gradient(to bottom, #cc99ff 0%, #cc00cc 105%);
+color:  linear-gradient(to bottom, #cc99ff 0%, #cc00cc 105%);
+}
+
+.search input::placeholder{
+color: linear-gradient(to top right, #cc99ff 0%, #ff0066 105%);;
+opacity: 1; /* ONLY FOR MOZILLA USERS */
+}
+
+.search button {
+width: 65px;
+height: 40px;
+border: none;
+border-radius: 2px;
+color: whitesmoke;
+background: linear-gradient(to top right, #000066 0%, #ff0066 105%);
+transition-property: all;
+transition-duration: 0.5s;
+padding: 3px;
+/* position: absolute; */
+/* right: 0;
+outline: none; */
+}
+
+.search button i {
+transition-property: all;
+transition-duration: 0.5s;
+}
+
+.search button:hover i {
+transform: scale(1.1);
+transition-property: all;
+transition-duration: 0.5s;
+}
+
+.logo{
+color: black;
+font-family: 'Pacifico';
+font-size: 27px;
+}   

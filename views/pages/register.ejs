@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/public/css/registration.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    
+
+<%- include('./../partials/header') -%>
+
+
+<center>
+    <form class="text-center border border-light p-5" action="/register" method="POST" id="myForm">
+
+        <p class="h4 mb-4">Sign up</p>
+    
+        <!-- Email -->
+        <input type="text" id="username" name="username" class="form-control mb-4" placeholder="Username" autocomplete="off">
+    
+        <!-- Email -->
+        <!-- <input type="email" id="email" name="email" class="form-control mb-4" placeholder="Email" autocomplete="off"> -->
+    
+        <!-- Password -->
+        <input type="password" id="password" name="password" class="form-control mb-4" placeholder="Password" autocomplete="off">
+    
+        
+    
+        <!-- Sign in button -->
+        <button class="btn btn-block my-4" type="submit">Submit</button>
+    
+        <!-- Register -->
+        <p>Already have an account?
+            <a href="/login">Login</a>
+        </p>
+    
+        
+    
+    </form>
+    
+</center>
+</body>
+</html>
