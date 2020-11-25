@@ -41,11 +41,11 @@ transition-duration: 0.5s;
 } */
 
 nav{
-    background: linear-gradient(to top right, #a305f2 0%, #e7b1ed 105%);
+    background: linear-gradient(to bottom, #ffccff 0%, #ff6699 100%);
 }
 
 .navbarLink{
-    margin-top: 20px;
+    margin-top: 5px;
     margin-left: 790px;
     list-style: none;
 }
@@ -56,10 +56,15 @@ color: black;
 font-family: 'Norican';
 font-size: 50px;
 font-weight: bold;
+margin-top: 30px;
 }   
 
 .logo:hover{
     text-decoration: none;
-    color: white;
+    color: purple;
     transition-duration: 0.8s;
+}
+
+.fa{
+    color: #660029;
 }

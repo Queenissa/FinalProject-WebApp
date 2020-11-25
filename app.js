@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const port = 9000
 const database = require('./services/database')
 const homepageRouter = require('./routes/homepage.route')
+const productRouter = require('./routes/product.route')
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}))
@@ -14,11 +15,6 @@ app.use('/public', express.static('public'));
 
 
 app.use('/', homepageRouter);
-
-// app.get('/', async(req, res) => {
-//     res.render('partials/header');
-// })
-
 database.connect();
 
 app.listen(port, () => {

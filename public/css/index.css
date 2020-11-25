@@ -1,5 +1,5 @@
 .container{
-    margin-top: .5in;
+    margin-top: .7in;
 } 
 
 a {
@@ -36,3 +36,10 @@ h3 {
 .image{
     height: 500px;
 }
+
+h2{
+  color: black;
+  border: brown;
+}
+
+

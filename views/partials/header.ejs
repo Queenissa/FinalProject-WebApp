@@ -25,19 +25,19 @@
           </form>
            -->
 
-<div>
+
   <!-- <i class="fa fa-shopping-cart" aria-hidden="true"></i> -->
   <nav class="nav">
     <a href="/" class="logo">KpopMerch</a>
     <ul class="nav navbarLink">
       <li class="nav-item">
-        <a class="nav-link" href="#">Notification</a>
+        <a class="nav-link" href="#"><i class="fa fa-bell" style="font-size:25px" data-toggle="tooltip" data-placement="top" title="Notifications"></i></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Cart</a>
+       <a class="nav-link" href="#"><i class="fa fa-shopping-cart" style="font-size:25px" data-toggle="tooltip" data-placement="top" title="Cart"></i></a>
       </li>
       <li class="nav-item mt-2">
-        <a href="#myModalLogin" class="button " class="trigger-btn" data-toggle="modal">Login</a>|<a href="#myModalRegister" class="button" class="trigger-btn" data-toggle="modal">Register</a>
+        <a href="#myModalLogin" class="button " class="trigger-btn " data-toggle="modal">Login</a>|<a href="#myModalRegister" class="button" class="trigger-btn m-5" data-toggle="modal">Register</a>
       </li>
     </ul>
   </nav>
@@ -51,9 +51,9 @@
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
         </div>
         <div class="modal-body">
-          <form action="" method="post">
+          <form action="/login" method="post">
             <div class="form-group">
-              <input type="text" class="form-control" name="username" placeholder="Username" required="required">
+              <input type="text" class="form-control" name="username" placeholder="Username" required="required" autocomplete="off">
             </div>
             <div class="form-group">
               <input type="password" class="form-control" name="password" placeholder="Password"
@@ -76,15 +76,15 @@
                   <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
               </div>
               <div class="modal-body">
-                  <form action="" method="post">
+                  <form action="/register" method="post">
                       <div class="form-group">
-                          <input type="text" class="form-control boxSpace" name="username" placeholder="Username" required="required">	
+                          <input type="text" class="form-control boxSpace" name="username" placeholder="Username" required="required"  autocomplete="off">	
                       </div>        
                       <div class="form-group">
-                          <input type="text" class="form-control" name="email" placeholder="Email" required="required">	
+                          <input type="text" class="form-control" name="email" placeholder="Email" required="required"  autocomplete="off">	
                       </div> 
                       <div class="form-group">
-                          <input type="text" class="form-control" name="password" placeholder="Password" required="required">	
+                          <input type="password" class="form-control" name="password" placeholder="Password" required="required">	
                       </div> 
                       <div class="form-group">
                           <button type="submit" class="btn btn-primary btn-lg btn-block login-btn button">Register</button>
@@ -95,4 +95,3 @@
       </div>
   </div>     
 
-</div>
