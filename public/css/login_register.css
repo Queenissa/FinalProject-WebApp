@@ -1,9 +1,5 @@
-.modal-login {		
-    color: #636363;
-    /* width:1000px; */
-}
+
 .modal-login .modal-content {
-    /* padding: 20px;\ */
     border-radius: 5px;
     border: none;
 }
@@ -21,9 +17,6 @@
     font-size: 26px;
     margin: 30px 0 -15px;
 }
-.modal-login .form-control:focus {
-    border-color: #70c5c0;
-}
 .modal-login .form-control, .modal-login .btn {
     min-height: 40px;
     border-radius: 3px; 
@@ -32,7 +25,8 @@
     position: absolute;
     top: 5px;
     right: 5px;
-}	
+    border-radius: 5px;
+}		
 .modal-login .modal-footer {
     background: #ecf0f1;
     border-color: #dee4e7;
@@ -45,20 +39,6 @@
 .modal-login .modal-footer a {
     color: #999;
 }		
-.modal-login .avatar {
-    position: absolute;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    top: -70px;
-    width: 95px;
-    height: 95px;
-    border-radius: 50%;
-    z-index: 9;
-    background: #60c7c1;
-    padding: 15px;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
-}
 .modal-login .avatar img {
     width: 100%;
 }
@@ -68,14 +48,16 @@
 .modal-login .btn, .modal-login .btn:active {
     color: #fff;
     border-radius: 4px;
-    background: #60c7c1 !important;
+    background: #fad0c4;
+    background-image: linear-gradient(315deg, #fad0c4 0%, #f1a7f1 74%);
     text-decoration: none;
     transition: all 0.4s;
     line-height: normal;
     border: none;
 }
 .modal-login .btn:hover, .modal-login .btn:focus {
-    background: #45aba6 !important;
+    background:  #a4508b !important;
+    background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
     outline: none;
 }
 .trigger-btn {
@@ -97,3 +79,10 @@
     color: black;
     text-decoration: none;
 }
+
+/* icons */
+/* .form-control {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-username.svg");
+    background-repeat: no-repeat;
+} */
+
