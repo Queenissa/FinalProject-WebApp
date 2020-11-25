@@ -2,7 +2,9 @@ const express = require('express')
 const app = express();
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
-const port = 9000
+const port = 5000
+
+
 const database = require('./services/database')
 const homepageRouter = require('./routes/homepage.route')
 
