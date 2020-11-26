@@ -13,6 +13,8 @@ router.post('/register', userRegister);
 router.post('/login', userSignin);
 router.get('/blackpink', getBlackPink);
 
+// const productController = require('../controllers/productCotroller');
+// const userController = require('../controllers/userController');
 
 
 module.exports = router;
