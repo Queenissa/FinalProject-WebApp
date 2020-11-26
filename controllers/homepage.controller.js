@@ -15,6 +15,11 @@ const userLogin = async (request, response) => {
     response.render('pages/login')
 }
 
+// get every categories
+const getBlackPink = (request,response) => {
+    response.render('pages/blackpink')
+}
+
 
 const userRegister = async (request, response) => {
     try{
@@ -80,6 +85,7 @@ module.exports = {
     userRgistration,
     userLogin,
     userRegister,
-    userSignin
+    userSignin,
+    getBlackPink
 
 }

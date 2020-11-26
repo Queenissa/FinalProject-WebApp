@@ -1,7 +1,3 @@
-.container{
-    margin-top: .5in;
-} 
-
 a {
   text-decoration: none;
 }
@@ -36,6 +32,7 @@ h3 {
 .image{
     height: 500px;
 }
+
 /* Categories Button */
 #categoryButton{
   width: 150px;
@@ -47,10 +44,8 @@ h3 {
 #categoryButton:hover{
   transform: scale(1.2); 
   transition: 0.2s;
+  text-decoration: none;
 }
-
-
-
 
 .topnav {
   overflow: hidden;
