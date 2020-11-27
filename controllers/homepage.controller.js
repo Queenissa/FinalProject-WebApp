@@ -1,6 +1,4 @@
 const User = require('../models/user.model')
-const { render } = require('ejs')
-const { request, response } = require('express')
 
 
 const homepage = async (request, response) => {
@@ -34,6 +32,7 @@ const userLogin = async (request, response) => {
 // const getMomoland = (request,response) => {
 //     response.render('pages/momoland')
 // }
+
 const userRegister = async (request, response) => {
     try{
         console.log(request.body)

@@ -4,7 +4,7 @@ const Product = require('../models/product.model');
 const getAllProducts = (req, res) => {
     Product.find({}, (err, products) => {
         if (err) {
-            res.send(err)
+            return res.send(err)
         }
         res.send(products)
     });
@@ -14,7 +14,7 @@ const getAllProducts = (req, res) => {
 const getProduct = (req, res) => {
     Product.findById(req.params.id, (err, product) => {
         if (err) {
-            res.send(err)
+            return res.send(err)
         }
         res.render('products_view', {
             product: product,
@@ -27,7 +27,7 @@ const getProduct = (req, res) => {
 function getId() {
     Product.find({}, 'product_number -_id', (err, product) => {
         if (err) {
-            res.send(err)
+            return res.send(err)
         }
         let lastID = product[product.length - 1]
         var number = lastID.product_number;
@@ -55,7 +55,7 @@ const addProduct = (req, res) => {
 
     productToCreate.save((err, product) => {
         if (err) {
-            res.send(err);
+            return res.send(err);
         }
         res.redirect('/products')
     });
