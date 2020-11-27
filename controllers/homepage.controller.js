@@ -16,24 +16,24 @@ const userLogin = async (request, response) => {
 }
 
 // get every categories
-const getBlackPink = (request,response) => {
-    response.render('pages/blackpink')
-}
-const getBts = (request,response) => {
-    response.render('pages/bts')
-}
-const getTwice = (request,response) => {
-    response.render('pages/twice')
-}
-const getExo = (request,response) => {
-    response.render('pages/exo')
-}
-const getRedVelvet = (request,response) => {
-    response.render('pages/redvelvet')
-}
-const getMomoland = (request,response) => {
-    response.render('pages/momoland')
-}
+// const getBlackPink = (request,response) => {
+//     response.render('pages/blackpink')
+// }
+// const getBts = (request,response) => {
+//     response.render('pages/bts')
+// }
+// const getTwice = (request,response) => {
+//     response.render('pages/twice')
+// }
+// const getExo = (request,response) => {
+//     response.render('pages/exo')
+// }
+// const getRedVelvet = (request,response) => {
+//     response.render('pages/redvelvet')
+// }
+// const getMomoland = (request,response) => {
+//     response.render('pages/momoland')
+// }
 const userRegister = async (request, response) => {
     try{
         console.log(request.body)
@@ -99,10 +99,4 @@ module.exports = {
     userLogin,
     userRegister,
     userSignin,
-    getBlackPink,
-    getBts,
-    getTwice,
-    getExo,
-    getRedVelvet,
-    getMomoland
 }
