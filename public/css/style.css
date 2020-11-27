@@ -1,7 +1,7 @@
 /* header */
 nav{
-    /* background: linear-gradient(to left, #ffccff 0%, #ff66cc 100%); */
-    background-color:hotpink;
+    background: linear-gradient(to left, #ffccff 0%, #ff66cc 100%);
+    /* background-color:hotpink; */
 }
 
 /* logo */
