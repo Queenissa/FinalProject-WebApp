@@ -19,8 +19,21 @@ const userLogin = async (request, response) => {
 const getBlackPink = (request,response) => {
     response.render('pages/blackpink')
 }
-
-
+const getBts = (request,response) => {
+    response.render('pages/bts')
+}
+const getTwice = (request,response) => {
+    response.render('pages/twice')
+}
+const getExo = (request,response) => {
+    response.render('pages/exo')
+}
+const getRedVelvet = (request,response) => {
+    response.render('pages/redvelvet')
+}
+const getMomoland = (request,response) => {
+    response.render('pages/momoland')
+}
 const userRegister = async (request, response) => {
     try{
         console.log(request.body)
@@ -86,6 +99,10 @@ module.exports = {
     userLogin,
     userRegister,
     userSignin,
-    getBlackPink
-
+    getBlackPink,
+    getBts,
+    getTwice,
+    getExo,
+    getRedVelvet,
+    getMomoland
 }

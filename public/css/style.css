@@ -1,6 +1,7 @@
 /* header */
 nav{
     background: linear-gradient(to left, #ffccff 0%, #ff66cc 100%);
+    /* background-color:hotpink; */
 }
 
 /* logo */
@@ -29,7 +30,7 @@ font-weight: bold;
 
 /* footer */
 footer{
-    margin-top: 1.3in;
+    margin-top: 1.8in;
     background-color:lightgray;
     padding: 20px;
     width: 100%;

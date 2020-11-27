@@ -2,7 +2,8 @@ const express =  require('express')
 const router = express.Router()
 
 const {
-    homepage, userRgistration, userLogin, userRegister, userSignin,getBlackPink
+    homepage, userRgistration, userLogin, userRegister, userSignin,
+    getBlackPink,getBts,getTwice,getExo,getRedVelvet,getMomoland
 } = require('../controllers/homepage.controller')
 
 
@@ -12,9 +13,11 @@ router.get('/login', userLogin)
 router.post('/register', userRegister);
 router.post('/login', userSignin);
 router.get('/blackpink', getBlackPink);
-
-// const productController = require('../controllers/productCotroller');
-// const userController = require('../controllers/userController');
-
+router.get('/bts',getBts);
+router.get('/twice',getTwice);
+router.get('/exo',getExo);
+router.get('/redvelvet',getRedVelvet);
+router.get('/momoland',getMomoland)
 
 module.exports = router;
+
