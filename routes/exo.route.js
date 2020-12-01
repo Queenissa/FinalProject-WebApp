@@ -2,10 +2,10 @@ const express  = require('express')
 const router = express.Router()
 
 const {
-    btsPage
-} = require('../controllers/bts.controller')
+    exoPage
+} = require('../controllers/exo.controller')
 
-router.get('/bts', btsPage)
+router.get('/exo', exoPage)
 
 
 module.exports = router;
