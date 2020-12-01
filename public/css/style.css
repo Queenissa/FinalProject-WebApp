@@ -4,6 +4,10 @@ nav{
     /* background-color:hotpink; */
 }
 
+.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
 /* logo */
 .logo{
 margin-left: 15px;
