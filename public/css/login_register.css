@@ -19,13 +19,11 @@
 }
 .modal-login .form-control, .modal-login .btn {
     min-height: 40px;
-    border-radius: 3px; 
 }
 .modal-login .close {
     position: absolute;
     top: 5px;
     right: 5px;
-    border-radius: 5px;
 }		
 .modal-login .modal-footer {
     background: #ecf0f1;
@@ -79,10 +77,4 @@
     color: black;
     text-decoration: none;
 }
-
-/* icons */
-/* .form-control {
-    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-username.svg");
-    background-repeat: no-repeat;
-} */
 

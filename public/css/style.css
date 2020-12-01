@@ -1,8 +1,13 @@
 /* header */
 nav{
     background: linear-gradient(to left, #ffccff 0%, #ff66cc 100%);
+    /* background-color:hotpink; */
 }
 
+.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
 /* logo */
 .logo{
 margin-left: 15px;
@@ -29,7 +34,7 @@ font-weight: bold;
 
 /* footer */
 footer{
-    margin-top: 1.3in;
+    margin-top: 70px;
     background-color:lightgray;
     padding: 20px;
     width: 100%;
