@@ -1,17 +1,8 @@
-const User = require('../models/user.model')
+const User = require('../models/user.model');
+const { response } = require('express');
 
 
-const homepage = async (request, response) => {
-    response.render('pages/index')
-}
 
-const userRgistration = async (request, response) => {
-    response.render('pages/register');
-}
-
-const userLogin = async (request, response) => {
-    response.render('pages/login')
-}
 
 // get every categories
 const getBlackPink = (request,response) => {
@@ -33,6 +24,33 @@ const getMomoland = (request,response) => {
     response.render('pages/momoland')
 }
 
+const homepage = async (request, response) => {
+    response.render('pages/index')
+}
+
+const userLogin = async (request, response) => {
+
+    try {
+        const email = request.body.email;
+        const password = request.body.password;
+
+        console.log(request.body)
+        const user =  await User.findOne({email: email});
+        if(!user) return response.status(400).json({message: "Email doesnt exist!"});
+
+        if(user.password !== password) response.status(400).json({message: "password doesnt match!"});
+        
+        console.log(user.role)
+        //temporary 
+        if(user.role == "admin"){
+            response.render('pages/adminIndex');
+        }
+        response.render('pages/userIndex');
+    } catch (e) {
+        return response.status(400)
+    }
+}
+
 const userRegister = async (request, response) => {
     try{
         console.log(request.body)
@@ -40,21 +58,11 @@ const userRegister = async (request, response) => {
             username: request.body.username,
             email: request.body.email,
             password: request.body.password
-
         };
 
         const newUser  = new User(user);
         const result = await newUser.save();
-        response.render('pages/index')
-
-        // if(!result){
-        //     response.redirect('pages/register')
-            
-        // }
-        // response.status(200).json({
-        //     message: "New user added"
-        // });
-        
+        response.render('pages/userIndex')
 
     }  catch (e){
         return response.status(400).json({
@@ -65,43 +73,23 @@ const userRegister = async (request, response) => {
 }
 
 
-
-const userSignin = async (request, response) => {
-    try {
-        const username = request.body.username;
-        const password = request.body.password;
-        console.log(request.body)
-        await User.findOne({username: username}, (err, foundResults) => {
-            if (err) {
-                console.log(err)
-            } else{
-                if (foundResults.password === password){
-                    response.render('pages/index')
-                } else {
-                    response.redirect('/')
-                }
-            }
-        })
-        
-        
-    } catch (e) {
-        return response.status(400)
-    }
-
+const getAdminIndex = async (request, response) => {
+   response.render('pages/adminIndex')
 }
+
+
 
 
 
 module.exports = {
     homepage,
-    userRgistration,
-    userLogin,
     userRegister,
-    userSignin,
+    userLogin,
     getBlackPink,
     getBts,
     getTwice,
     getExo,
     getRedVelvet,
-    getMomoland
+    getMomoland,
+    getAdminIndex
 }

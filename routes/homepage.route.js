@@ -2,16 +2,15 @@ const express =  require('express')
 const router = express.Router()
 
 const {
-    homepage, userRgistration, userLogin, userRegister, userSignin,
-    getBlackPink,getBts,getTwice,getExo,getRedVelvet,getMomoland //categories
+    homepage, userLogin, userRegister,  
+    getBlackPink,getBts,getTwice,getExo,getRedVelvet,getMomoland, getAdminIndex//categories
 } = require('../controllers/homepage.controller')
 
 
 router.get('/', homepage);
-router.get('/register', userRgistration);
-router.get('/login', userLogin)
-router.post('/register', userRegister);
-router.post('/login', userSignin);
+router.post('/welcomeUser', userRegister);
+router.post('/welcome', userLogin);
+router.get('/welcome', getAdminIndex);
 //routes every categories
 router.get('/blackpink', getBlackPink);
 router.get('/bts',getBts);

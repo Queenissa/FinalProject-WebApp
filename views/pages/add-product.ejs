@@ -1,0 +1,55 @@
+<title>Add Product</title>
+
+<body>
+
+<%- include('./../partials/adminHeader') -%>
+
+<form action="/admin/add-product" method="POST">
+    <div class="container border mt-5 ">
+        <div class="row">
+            <div class="col-md-12 text-right mt-3">
+                <a href="/welcome"><button class="btn btn-secondary px-5 py-2 ">Back</button></a>
+            </div>
+            <!-- <div class="col-2"></div>
+            <div class="col-3 imgUp ">
+                <div class="imagePreview"></div>
+                <label class="btn btn-info">
+                    Upload Photo<input type="text" class="uploadFile img uploadButton btn-block " value="Upload Photo" name="imageUrl">
+                </label>
+            </div> -->
+            <div class="col-md-7 ">
+                
+                     <div class="form-group col-md-9 mb-2 " >
+                        <label for="">Title</label>
+                        <input type="text" class="form-control" name="title" placeholder="Title" >
+                    </div> 
+                    
+                    <div class="form-group col-md-9 mb-2" >
+                        <label for="">Image URL</label>
+                        <input type="text" class="form-control" name="imageUrl" placeholder="Image URL" >
+                    </div>
+
+                    <div class="form-group col-md-9 mb-2" >
+                        <label for="">Price</label>
+                        <input type="text" class="form-control" name="price" placeholder="Price" >
+                    </div>
+
+                
+
+                     <div class="form-group col-md-9 mb-2" >
+                        <label for="">Category</label>
+                        <input type="text" class="form-control" name="category" placeholder="Category" >
+                    </div>
+               
+            </div>
+            <div class="col-md-11 text-right mt-3 mb-3">
+                <a href="/welcome"><button class="btn btn-success px-5 py-2 mb-3" type= "submit" value="Submit">Save</button></a>
+            </div>
+        </div>
+    </div>
+</form>
+
+    
+    <%- include('./../partials/footer') -%>
+    <script src="/public/js/add-product.js"></script>
+</body>

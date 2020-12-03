@@ -1,16 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta category="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Home</title>
   <link rel="stylesheet" href="/public/css/index.css">
   <link href='https://fonts.googleapis.com/css?family=Kavoon' rel='stylesheet'>
-</head>
-
+  <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+  <script src="/public/js/chart-area.js"></script>
 <body>
-  <%- include('./../partials/mainHeader') -%>
+  <%- include('./../partials/userHeader') -%>
 
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
@@ -127,6 +124,4 @@
     </div>
   </div>
   <%- include('./../partials/footer') -%>
-</body>
-
-</html>
+ 

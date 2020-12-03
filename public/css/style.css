@@ -28,6 +28,10 @@ font-weight: bold;
     transition-duration: 0.8s;
 }
 
+
+
+
+
 /* footer */
 footer{
     margin-top: 70px;
@@ -36,9 +40,3 @@ footer{
     width: 100%;
 }
 
-/* dropdown */
-    /* .navbar-expand-md.navbar-nav .dropdown-menu{
-        position: relative;
-        margin-right: -500px;
-    }
-        */

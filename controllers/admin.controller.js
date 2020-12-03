@@ -1,7 +1,7 @@
 const Product = require('../models/product.model');
 
 exports.getProductForm = (req, res, next) => {
-    res.render('add-product', { name: 'Tina', path: '/admin/add-product', pageTitle: 'Add Product' });
+    res.render('pages/add-product');
 }
 
 exports.postProduct = (req, res, next) => {
@@ -9,11 +9,11 @@ exports.postProduct = (req, res, next) => {
         title: req.body.title,
         imageURL: req.body.imageURL,
         price: req.body.price,
-        description: req.body.description
+        category: req.body.category
     });
     prod.save()
         .then(result => {
-            res.redirect('/');
+            res.redirect('pages/adminIndex');
         }).catch(err => console.log(err));
 
 
@@ -39,7 +39,6 @@ exports.editProductPost = (req, res, next) => {
 }
 
 exports.deleteProduct = (req, res, next) => {
-
 
     Product.findByIdAndRemove(req.body.id) //findAndModify
         .then(result => {

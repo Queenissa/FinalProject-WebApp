@@ -4,15 +4,12 @@ const Product = require('../models/product.model');
 const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
-    email: {
-        type: String,
-        required: true,
-        unique: true
-    },
-    password: {
-        type: String,
-        required: true
-    },
+    username: {type: String, required: false},
+    email: {type: String, required: false, unique: true},
+    password: {type: String, required: false},
+    img: { type: String, required: false, default: "default1.jpg" },
+    role:{type: String, enum:["admin","client"], default:"client"},
+    
     cart: {
         items: [{
             productId: {
